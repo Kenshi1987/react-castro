@@ -118,6 +118,7 @@ import {
                     {navItem.children.map((child) => (
                       <DesktopSubNav key={child.label} {...child} />
                     ))}
+                    
                   </Stack>
                 </PopoverContent>
               )}
@@ -157,7 +158,7 @@ import {
             flex={1}>
             <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
           </Flex>
-        </Stack>
+          </Stack>
       </Link>
     );
   };
@@ -204,7 +205,7 @@ import {
             />
           )}
         </Flex>
-  
+        <Cartwidget/>
         <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>
           <Stack
             mt={2}
@@ -219,6 +220,7 @@ import {
                   {child.label}
                 </Link>
               ))}
+              
           </Stack>
         </Collapse>
       </Stack>

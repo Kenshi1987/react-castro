@@ -15,7 +15,7 @@ import {
   
   export default function Item({id, title, price, stock }) {
     return (
-      <Center py={12}>
+      <Center py={12} style={{margin:"10px"}}>
         <Box
           role={'group'}
           p={6}

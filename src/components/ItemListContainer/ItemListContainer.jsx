@@ -7,8 +7,14 @@ export default function ItemListContainer({greeting}) {
 
   useEffect(()=> {
 
-    let products = [{id: 1, title: 'Aceites Esenciales', price: '$ 500'}, 
-                    {id: 2, title: 'Velas Aromaticas', price: '$500'}];
+    let products = [
+                    {id: 1, title: 'Aceites Esenciales', price: '$ 500'}, 
+                    {id: 2, title: 'Velas Aromaticas', price: '$500'},
+                    {id: 3, title: 'Sahumerios', price: '$ 400'}, 
+                    {id: 4, title: 'Jabones', price: '$400'},
+                    {id: 5, title: 'Hierbas', price: '$ 400'}, 
+                    {id: 6, title: 'Carbones', price: '$400'}
+                  ];
       new Promise((resolve, reject) => {
         
         setTimeout(()=>{

@@ -7,7 +7,7 @@ function ItemList({items}) {
     <>
       <Flex align="center" justify="center" flexWrap="wrap">
         {items.map ((item, indx)=>
-            <Item key={indx} id={item.id} title={item.title} price={item.price}/>
+            <Item key={indx} id={item.id} title={item.title} price={item.price} img={item.img}/>
 
         )}  
       </Flex>  

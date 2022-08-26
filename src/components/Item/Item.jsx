@@ -1,4 +1,5 @@
 import React from 'react'
+import Contador from '../Counter/Contador';
 
 import {
     Box,
@@ -11,7 +12,13 @@ import {
   } from '@chakra-ui/react';
   
   
+  
   export default function Item({id, title, price, stock, img}) {
+
+    const onAdd = (contador) => {
+      console.log ('Soy onAdd y el valor del contador es:', contador)
+    }
+
     return (
       <Center py={12} style={{margin:"10px"}}>
         <Box
@@ -68,6 +75,7 @@ import {
               
             </Stack>
           </Stack>
+          <Contador onAdd={onAdd}/>
         </Box>
       </Center>
     );

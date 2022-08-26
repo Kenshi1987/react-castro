@@ -1,52 +1,21 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-
-
-.App{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding-top: 100px;
-}
-
 .botoncito {
-    width: 80px;
-    height: 80px;
-    margin: 20px;
-    padding: 10px;
-}
-
-.resta:hover {
-    background-color: red;
-}
-
-button {
-    width: 200px;
-    height:  80px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: gray;
     color: white;
-    border: 2px solid black;
-    border-radius: 15px;
-    margin: 5px;
     cursor: pointer;
-    background-color: grey;
-    font-size: 20px;
+    font-size: 1rem;
+    border-radius: 3px;
+    margin: 3px;
+    padding: 3px;
+    justify-content: center;
 }
 
-
-
-
-button:hover {
-    background-color: green;
+.botoncito:hover {
+    background-color: pink;
 }
 
 .numero {
-    font-size: 30px;
+    font-size: 1rem;
 }

@@ -10,6 +10,7 @@ import {
     Stack,
     Image,
   } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
   
   
   
@@ -53,6 +54,7 @@ import {
                 filter: 'blur(20px)',
               },
             }}>
+            <Link to={`/item/${id}`}>
             <Image
               rounded={'lg'}
               height={230}
@@ -60,6 +62,7 @@ import {
               objectFit={'cover'}
               src={img}
             />
+            </Link>
           </Box>
           <Stack pt={10} align={'center'}>
             <Text color={'gray.500'} fontSize={'sm'} textTransform={'uppercase'}>

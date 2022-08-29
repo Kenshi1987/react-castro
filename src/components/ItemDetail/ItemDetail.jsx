@@ -1,7 +1,7 @@
 import React from 'react';
 
 export function ItemDetail({item}) {
-    const {id, price, title, img} = item;
+    const {id, category, price, title, img} = item;
   return (
     <div>
         <h1>{title} - {id}</h1>

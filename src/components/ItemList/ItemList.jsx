@@ -1,18 +1,18 @@
 import React from 'react'
 import Item from '../Item/Item'
-import {Flex} from '@chakra-ui/react';
 
 function ItemList({items}) {
   return (
-    <>
-      <Flex align="center" justify="center" flexWrap="wrap">
-        {items.map ((item, indx)=>
-            <Item key={indx} id={item.id} title={item.title} price={item.price} img={item.img}/>
-
-        )}  
-      </Flex>  
-
-       
+    <> 
+      
+            <div className="d-flex flex-wrap">
+            
+            {items.map ((item, indx)=>
+            <Item key={indx} id={item.id} title={item.title} description={item.description} price={item.price} img={item.img}/>
+            )}  
+            </div>
+             
+            
     </>
   );
 }

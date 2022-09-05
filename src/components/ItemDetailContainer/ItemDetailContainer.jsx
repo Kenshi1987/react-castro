@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {useParams} from 'react-router-dom';
 import {ItemDetail} from '../ItemDetail/ItemDetail';
-
+import Spinner from 'react-bootstrap/Spinner';
 export function ItemDetailContainer() {
 
   const {id} = useParams(); 
@@ -9,7 +9,7 @@ export function ItemDetailContainer() {
 
   useEffect(()=> {
     let products = [
-      {id: 1, category: 'Aceites', title: 'Aceites Esenciales', price: '$ 500', img:'../img/aceites.jpg'}, 
+      {id: 1, category: 'Aceites', title: 'Aceites Esenciales', price: '$ 500', img:'../img/aceites.jpg', description:'Aceites puros de origen Vegetal, sin agregados quimicos. Esencias puras de la mas alta calidad. Amplias Fragancias.'}, 
       {id: 2, category: 'Velas', title: 'Velas Aromaticas', price: '$500', img:'../img/velas.jpg'},
       {id: 3, category: 'Sahumerios', title: 'Sahumerios', price: '$ 400', img:'../img/sahumerios.jpg'}, 
       {id: 4, category: 'Jabones', title: 'Jabones', price: '$400', img:'../img/jabones.jpg'},
@@ -30,6 +30,7 @@ export function ItemDetailContainer() {
   return (
     <div>
       { Object.getOwnPropertyNames(item).length && <ItemDetail item={item}/>}
+      
     </div>
   )
 }

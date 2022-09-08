@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import {Button} from 'react-bootstrap'
 
 export default function ItemCount({stock, initial, onAdd}) {
  
@@ -7,11 +8,11 @@ export default function ItemCount({stock, initial, onAdd}) {
  
      return (
     <>
-    <div>Contador</div>
-    <button onClick={() => {setCounter (counter - 1)}} disabled={counter===initial}>-</button>
+    
+    <div><Button className="btn btn-primary btn-lg"onClick={() => {setCounter (counter - 1)}} disabled={counter===initial}>-</Button></div>
     <span>{counter}</span>
-    <button onClick={() => {setCounter (counter + 1)}} disabled={counter===stock}>+</button>
-    <div><button onClick={()=>onAdd(counter)} disabled={counter ===0}>Agregar al Carrito</button></div>
+    <div><Button className="btn btn-primary btn-lg" onClick={() => {setCounter (counter + 1)}} disabled={counter===stock}>+</Button></div>
+    <div><Button className="btn btn-primary btn-lg" onClick={()=>onAdd(counter)} disabled={counter ===0}>Agregar al Carrito</Button></div>
     </>
   )
 }

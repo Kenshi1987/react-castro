@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {useParams} from 'react-router-dom';
 import {ItemDetail} from '../ItemDetail/ItemDetail';
-import Spinner from 'react-bootstrap/Spinner';
+
 export function ItemDetailContainer() {
 
   const {id} = useParams(); 
@@ -28,7 +28,7 @@ export function ItemDetailContainer() {
   }, [id])
 
   return (
-    <div>
+    <div className="d-flex justify-content-center m-5">
       { Object.getOwnPropertyNames(item).length && <ItemDetail item={item}/>}
       
     </div>

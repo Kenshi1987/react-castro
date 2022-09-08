@@ -6,6 +6,7 @@ import {ItemDetailContainer} from './components/ItemDetailContainer/ItemDetailCo
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Cart } from './components/Cart/Cart';
 import CheckOut from './components/CheckOut/CheckOut';
+import { CartProvider } from './context/CartContext';
 
 
 
@@ -15,7 +16,7 @@ function App() {
   return (
 
     <div className="App">
-    
+    <CartProvider>
     <BrowserRouter>
       <Navbar/>
       <Routes>
@@ -26,6 +27,7 @@ function App() {
           <Route path='/checkout' element= {<CheckOut/>}/>
       </Routes>
     </BrowserRouter>
+    </CartProvider>
     </div>
   );
 }

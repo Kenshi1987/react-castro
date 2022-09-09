@@ -28,10 +28,15 @@ export function CartProvider ({children}){
     }
 
     function isInCart(itemId){
+        if (!!items){
+            return items.some((element)=>element.id ==itemId);
 
-        return items.find((element) => element.id ==itemId);
-
+        } else {
+        
+            return false
     }
+}
+            
     return (
         <CartContext.Provider value={{addItem, removeItem, items, clear}}>
             {children}

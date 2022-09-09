@@ -10,7 +10,7 @@ export function Cart(){
     <>
     <div>Cart</div>
     {!items && <span>Carrito Vacio</span>}
-    {items.lenght && <ol>
+    {items && <ol>
       {items.map((item => <li> {item.title} - {item.quantity}</li>))}
       </ol>}
     </>

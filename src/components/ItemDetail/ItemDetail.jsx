@@ -25,7 +25,7 @@ export function ItemDetail({item}) {
         <h2>{price}</h2>
         {counter ? 
         <Link to="/cart"><Button>Finalizar Compra</Button></Link> : 
-        <ItemCount initial={1} stock={5} onAdd={onAdd}/>}     
+        <ItemCount initial={1} stock={10} onAdd={onAdd}/>}     
       </Card>   
     </div>
   )

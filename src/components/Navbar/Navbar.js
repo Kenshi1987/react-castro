@@ -22,9 +22,12 @@ import {
     ChevronRightIcon,
   } from '@chakra-ui/icons';
   import Cartwidget from '../Cartwidget/Cartwidget';
+import { NavLink } from 'react-router-dom';
+
   
   export default function Navbar() {
     const { isOpen, onToggle } = useDisclosure();
+    
   
     return (
       <Box>
@@ -52,13 +55,14 @@ import {
             />
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          
-            <Text
+           
+            <NavLink to ="/"
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
               color={useColorModeValue('gray.800', 'white')}>
               Elementos
-            </Text>
+            </NavLink>
+            
            
   
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>

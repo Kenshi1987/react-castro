@@ -9,12 +9,12 @@ export function ItemDetailContainer() {
 
   useEffect(()=> {
     let products = [
-      {id: 1, category: 'Aceites', title: 'Aceites Esenciales', price: '$ 500', img:'../img/aceites.jpg', description:'Aceites puros de origen Vegetal, sin agregados quimicos. Esencias puras de la mas alta calidad. Amplias Fragancias.'}, 
-      {id: 2, category: 'Velas', title: 'Velas Aromaticas', price: '$500', img:'../img/velas.jpg'},
-      {id: 3, category: 'Sahumerios', title: 'Sahumerios', price: '$ 400', img:'../img/sahumerios.jpg'}, 
-      {id: 4, category: 'Jabones', title: 'Jabones', price: '$400', img:'../img/jabones.jpg'},
-      {id: 5, category: 'Hierbas', title: 'Hierbas', price: '$ 400', img:'../img/hierbas.png'}, 
-      {id: 6, category: 'Carbones', title: 'Carbones', price: '$400', img:'../img/carbones.jpg'}
+      {id: 1, category: 'Aceites', title: 'Aceites Esenciales', price: '500', img:'../img/aceites.jpg', description:'Aceites puros de origen Vegetal, sin agregados quimicos. Esencias puras de la mas alta calidad. Amplias Fragancias.'}, 
+      {id: 2, category: 'Velas', title: 'Velas Aromaticas', price: '500', img:'../img/velas.jpg'},
+      {id: 3, category: 'Sahumerios', title: 'Sahumerios', price: '400', img:'../img/sahumerios.jpg'}, 
+      {id: 4, category: 'Jabones', title: 'Jabones', price: '400', img:'../img/jabones.jpg'},
+      {id: 5, category: 'Hierbas', title: 'Hierbas', price: '400', img:'../img/hierbas.png'}, 
+      {id: 6, category: 'Carbones', title: 'Carbones', price: '400', img:'../img/carbones.jpg'}
     ];
       new Promise((resolve) => {
         

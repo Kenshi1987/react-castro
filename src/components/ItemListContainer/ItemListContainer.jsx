@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Spinner } from '@chakra-ui/react';
 import ItemList from '../ItemList/ItemList';
 import {useParams} from 'react-router-dom'
+import { collection } from 'firebase/firestore';
 
-export function ItemListContainer({greeting}) {
+/*export function ItemListContainer({greeting}) {
   const [items, setItems] = useState ({});
   const {categoryid} = useParams();
 
@@ -38,6 +39,16 @@ export function ItemListContainer({greeting}) {
         }
     </div>
   )
-}
+}*/
+
+useEffect(()=>{
+
+  const getColData = async ()=>{
+
+    const data = collection (db,"products")
+  }
+})
+
+
 
 
